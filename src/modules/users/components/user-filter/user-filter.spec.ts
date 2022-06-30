@@ -1,0 +1,7 @@
+describe('login component', function () {
+    test("", () => {
+
+    })
+});
+
+export default null
