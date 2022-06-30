@@ -1,4 +1,4 @@
-describe('card component', function () {
+describe('popap component', function () {
     test("", () => {
 
     })

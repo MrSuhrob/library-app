@@ -1,4 +1,4 @@
-describe('login component', function () {
+describe('register form component', function () {
     test("", () => {
 
     })

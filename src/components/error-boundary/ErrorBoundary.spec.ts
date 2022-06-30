@@ -1,4 +1,4 @@
-describe('input component', function () {
+describe('error boundary component', function () {
     test("", () => {
 
     })

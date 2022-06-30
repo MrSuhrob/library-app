@@ -1,4 +1,4 @@
-describe('card component', function () {
+describe('modal component', function () {
     test("", () => {
 
     })
