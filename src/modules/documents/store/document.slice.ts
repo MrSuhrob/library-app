@@ -6,30 +6,29 @@ const initialState: any = {
     error: '',
 }
 
-export const fetchLogin = createAsyncThunk(
-    'auth/fetchLogin',
+export const fetchDocuments = createAsyncThunk(
+    'documents/fetchDocuments',
     async (payload, { rejectWithValue, dispatch }) => {
 
     }
 )
 
-export const appSlice = createSlice({
-    name: 'auth',
+export const documentSlice = createSlice({
+    name: 'documents',
     initialState,
     reducers: {
-
-        loginReducer: (state, payload) => {
+        setDocumentReducer: (state, payload) => {
 
         }
 
     },
     extraReducers: (builder) => {
-        builder.addCase(fetchLogin.pending, (state, action) => {
+        builder.addCase(fetchDocuments.pending, (state, action) => {
 
         })
     }
 })
 
-export const { loginReducer } = appSlice.actions
+export const { setDocumentReducer } = documentSlice.actions
 
-export default appSlice.reducer
+export default documentSlice.reducer

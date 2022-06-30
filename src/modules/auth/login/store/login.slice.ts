@@ -7,14 +7,14 @@ const initialState: any = {
 }
 
 export const fetchLogin = createAsyncThunk(
-    'auth/fetchLogin',
+    'login/fetchLogin',
     async (payload, { rejectWithValue, dispatch }) => {
 
     }
 )
 
-export const appSlice = createSlice({
-    name: 'auth',
+export const loginSlice = createSlice({
+    name: 'login',
     initialState,
     reducers: {
 
@@ -30,6 +30,6 @@ export const appSlice = createSlice({
     }
 })
 
-export const { loginReducer } = appSlice.actions
+export const { loginReducer } = loginSlice.actions
 
-export default appSlice.reducer
+export default loginSlice.reducer

@@ -6,30 +6,30 @@ const initialState: any = {
     error: '',
 }
 
-export const fetchLogin = createAsyncThunk(
-    'auth/fetchLogin',
+export const fetchRegister = createAsyncThunk(
+    'register/fetchRegister',
     async (payload, { rejectWithValue, dispatch }) => {
 
     }
 )
 
-export const appSlice = createSlice({
+export const registerSlice = createSlice({
     name: 'auth',
     initialState,
     reducers: {
 
-        loginReducer: (state, payload) => {
+        registerReducer: (state, payload) => {
 
         }
 
     },
     extraReducers: (builder) => {
-        builder.addCase(fetchLogin.pending, (state, action) => {
+        builder.addCase(fetchRegister.pending, (state, action) => {
 
         })
     }
 })
 
-export const { loginReducer } = appSlice.actions
+export const { registerReducer } = registerSlice.actions
 
-export default appSlice.reducer
+export default registerSlice.reducer
